@@ -1,0 +1,9 @@
+.finance {
+  background: #4e9616;
+}
+.user {
+  margin: 10px 0 10px 24px;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}

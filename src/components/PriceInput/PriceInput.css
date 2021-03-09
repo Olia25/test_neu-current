@@ -1,0 +1,41 @@
+.addedQuantity {
+  margin-top: 20px;
+}
+.miniPrice {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 15px;
+  color: #005be4;
+  margin-bottom: 0;
+}
+.quantityMiniInner {
+  border: 1px solid #dadae8;
+  width: 130px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  background: #f3f3fb;
+  border-radius: 3px;
+  position: relative;
+}
+.operatorMinus {
+  color: #dadae8;
+  font-size: 14px;
+  /*margin-left: 10px;*/
+  /*position: absolute;*/
+}
+.operatorPlus {
+  color: #005be4;
+  font-size: 18px;
+  /*margin-right: 10px;*/
+}
+.miniInput {
+  width: 30px;
+  border-color: transparent;
+  text-align: center;
+  background: #f3f3fb;
+}
+.miniButton {
+  border-color: transparent;
+  background-color: transparent;
+}

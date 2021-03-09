@@ -1,0 +1,50 @@
+@media only screen and (min-width: 320px) {
+  .logoName{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .flimcor {
+    font-size: 18px;
+    margin-left: 15px;
+    line-height: 35px;
+    font-family: "Baloo 2", cursive;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .logo {
+    margin-left: 24px;
+    width: 26px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .logo {
+    margin-left: 24px;
+    width: 23px;
+    height: 27px;
+  }
+  .flimcor {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .logo {
+    margin-left: 24px;
+  }
+  .flimcor {
+    margin-left: 8px;
+  }
+}
+@media only screen and (min-width: 1425px) {
+  .logo {
+    width: 26px;
+    height: 30px;
+  }
+  .flimcor {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+}

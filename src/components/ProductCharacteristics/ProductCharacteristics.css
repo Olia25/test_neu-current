@@ -1,0 +1,25 @@
+.productCharacteristics {
+  width: 100%;
+  background: #fbfbfb;
+  border-radius: 2px;
+  padding: 30px;
+  color: #5b5b5b;
+  font-size: 13px;
+  line-height: 25px;
+}
+.productCharacteristics span {
+  color: #242424;
+}
+.line {
+  position: relative;
+  margin-top: 10px;
+}
+.line::after {
+  display: block;
+  content: "";
+  width: 97%;
+  border: 1px solid #efefef;
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+}

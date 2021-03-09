@@ -1,38 +1,308 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+
+}
+.imgCart {
+  width: 14px;
+  height: 15px;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+.topLine {
+  background: linear-gradient(90.74deg, #e3eeff -37.48%, #f8fbff 108.93%);
+}
+.topLine .ant-page-header-heading-sub-title {
+  color: #758294;
+  font-size: 15px;
+  line-height: 20px;
+}
+.titleOfProduct {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #181818;
+}
+.informText span {
+  color: #181818;
+}
+.cartTitleOfProd {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
+  color: #1f2328;
+}
+.cartPrice {
+  color: #005be4;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+.dollar {
+  font-size: 18px;
+  color: #5b626d;
+}
+.greenText {
+  color: #4e9616;
+}
+.productMainInform {
+  margin-top: 20px;
+  padding-top: 15px;
+}
+.productDescription {
+  margin-top: 30px;
+  color: #3d3d3d;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+}
+.coverForCart {
+  background: #fafafa;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img {
+  width: 100%;
+  margin-top: 20px;
+}
+.inputPrice {
+  width: 30%;
+}
+.buttonStyle {
+  margin-left: 10px;
+}
+.dividerLine {
+  position: relative;
+  padding-bottom: 10px;
+}
+.dividerLine::before {
+  display: block;
+  content: "";
+  width: 100%;
+  border: 1px solid #efefef;
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+.dividerLine::after {
+  display: block;
+  content: "";
+  width: 100%;
+  border: 1px solid #efefef;
+  position: absolute;
+  right: 0;
+}
+.currencyStyle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d434a;
+  margin-left: 10px;
+}
+.badgeStyle {
+  border: 1px solid #838b95;
+  padding: 5px 9px 5px 9px;
+  border-radius: 50px;
+  font-size: 13px;
+  margin: 0 10px 0 10px;
+}
+.popoverWidth {
+  width: 250px;
+  margin-bottom: 15px;
+}
+.topLineFinance {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4e9616;
+}
+.myFinances {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #005be4;
+}
+.myFinancesNum {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.myFinancesNum span {
+  color: #4c7eff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.drawer .ant-drawer-body{
+  padding: 0;
+}
+.menu.ant-btn-primary{
+  color: #6A7588;
+  background: transparent;
+  border-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-width: 320px) {
+  .informText {
+    font-size: 12px;
+    line-height: 20px;
+    color: #5b626d;
+  }
+  .priceBorder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ebeff4;
+    margin-top: 30px;
+  }
+  .priceInform {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0;
+  }
+  .priceBordContainer {
+    padding: 15px 0 15px 0;
+  }
+  .dollar {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+  }
+  .sum {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .prodCharactMargin{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .quantityInner {
+    display: inline-flex;
+    border: 1px solid #d7d6d6;
+    position: relative;
+  }
+  .quantityInner .btMinus,
+  .quantityInner .btPlus,
+  .quantityInner .quantity {
+    height: 38px;
+    width: 8px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+  .quantityInner .btMinus,
+  .quantityInner .btPlus {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 10px;
+  }
+  .quantityInner .btPlus {
+    top: 5px;
+  }
+  .quantityInner .btMinus {
+    bottom: 5px;
+  }
+  .quantityInner .quantity {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    width: 30px;
+    margin-right: 40px;
+    margin-left: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .informText {
+    font-size: 15px;
+  }
+  .priceInform {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .priceBorder {
+    justify-content: start;
+  }
+  .priceBordContainer {
+    margin-left: 30px;
+  }
+  .sum {
+    font-size: 20px;
+  }
+  .quantityInner .btMinus,
+  .quantityInner .btPlus,
+  .quantityInner .quantity {
+    height: 38px;
+    width: 15px;
+  }
+  .quantityInner .btMinus,
+  .quantityInner .btPlus {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 10px;
+  }
+  .quantityInner .quantity {
+    margin-right: 70px;
+    margin-left: 10px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .dollar {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 500;
+  }
+  .informText {
+    font-size: 11px;
+  }
+  .priceInform {
+    font-size: 22px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1324px) {
+  .quantityInner .btMinus,
+  .quantityInner .btPlus,
+  .quantityInner .quantity {
+    height: 38px;
+    width: 38px;
+  }
+  .quantityInner .btMinus,
+  .quantityInner .btPlus {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 10px;
+  }
+  .quantityInner .quantity {
+    margin-right: 70px;
+    margin-left:0;
+  }
+  .sum {
+    font-size: 24px;
+  }
+  .informText {
+    font-size: 11px;
+  }
+  .priceInform {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1425px) {
+  .informText {
+    font-size: 13px;
+  }
+  .priceInform {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 2525px) {
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
