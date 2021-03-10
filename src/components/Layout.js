@@ -6,12 +6,12 @@ import {
   CaretUpOutlined,
   DownOutlined,
   ShoppingCartOutlined,
-  InfoCircleOutlined,
 } from "@ant-design/icons";
 import ProductCharacteristics from "./ProductCharacteristics/ProductCharacteristics";
 import flag from "../assets/img/flag.png";
 import React, { useState } from "react";
 import PriceInput from "./PriceInput/PriceInput";
+import InfoCircle from "../assets/icons/Info.svg"
 
 const Layout = () => {
   const [mode, setMode] = useState(false);
@@ -40,7 +40,7 @@ const Layout = () => {
               <div className="priceBordContainer">
                 <p className="informText">
                   Ціна закупки{" "}
-                  <InfoCircleOutlined style={{ color: "#BABEC9" }} />
+                  <img src={InfoCircle} alt={InfoCircle}/>
                 </p>
                 <p className="priceInform">
                  {product.price} <span className="dollar">₴</span>
@@ -49,7 +49,7 @@ const Layout = () => {
               <div className="priceBordContainer">
                 <p className="informText">
                   Ціна продажу{" "}
-                  <InfoCircleOutlined style={{ color: "#BABEC9" }} />
+                  <img src={InfoCircle} alt={InfoCircle}/>
                 </p>
                 <p className="priceInform">
                   225.5 <span className="dollar">₴</span>
@@ -58,7 +58,7 @@ const Layout = () => {
               <div className="priceBordContainer">
                 <p className="informText">
                   Рентабельність{" "}
-                  <InfoCircleOutlined style={{ color: "#BABEC9" }} />
+                  <img src={InfoCircle} alt={InfoCircle}/>
                 </p>
                 <p className="priceInform greenText">338%</p>
               </div>
@@ -94,7 +94,7 @@ const Layout = () => {
 
         <Col xs={22} xl={7}>
           <div className="coverForCart">
-            <p>Артикул: {product.barCode}</p>
+            <p className="informText">Артикул: <span>{product.barCode}</span></p>
             <p className="cartTitleOfProd">{product.name}</p>
             <p className="cartPrice">
               {product.price} <span className="dollar">₴</span>

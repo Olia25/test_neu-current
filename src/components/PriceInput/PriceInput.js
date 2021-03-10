@@ -1,4 +1,4 @@
-import { Button, Divider, Row, Col } from "antd";
+import { Button, Divider, Row } from "antd";
 import "./PriceInput.css";
 
 import img from "../../assets/img/Sweatshirts.png";
@@ -6,7 +6,7 @@ import cart from "../../assets/img/cart.png";
 const PriceInput = ({ price, quantity, setQuantity }) => {
   return (
     <Row justify="space-between" align="middle" className="addedQuantity">
-      <p className="miniPrice">{price} $</p>
+      <p className="miniPrice">{price} <span>₴</span></p>
       <Row>
         <div className="quantityMiniInner">
           <button

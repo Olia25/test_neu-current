@@ -1,9 +1,21 @@
-.finance {
-  background: #4e9616;
+.finance{
+  display: flex;
+}
+.finance p{
+  background: #4E9616;
+  border-radius: 3px;
+  padding: 0 5px 0 5px;
+  margin-right: 10px;
 }
 .user {
-  margin: 10px 0 10px 24px;
-  display: flex;
-  flex-direction: row;
-  width: 300px;
+  margin: 20px 0 20px 24px;
+}
+.user p{
+  margin-bottom: 0;
+  align-self: center;
+  color: #DDDDDD;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5px;
+
 }

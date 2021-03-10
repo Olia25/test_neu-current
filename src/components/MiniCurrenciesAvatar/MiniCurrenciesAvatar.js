@@ -1,44 +1,29 @@
-import { Avatar, Button, Col, Popover, Row } from "antd";
-import ExchangeRates from "../ExchangeRates";
+import { Avatar, Button, Row } from "antd";
+import React from "react";
 import avatar from "../../assets/img/avatar.png";
-import { DollarOutlined } from "@ant-design/icons";
 import "./MiniCurrenciesAvatar.css";
+import DollarCircle from "../../assets/icons/Vector.svg";
+import PopoverCurrency from "../Popover/Popover";
 
 const MiniCurrenciesAvatar = ({ price }) => {
-  const title = (
-    <Row justify="space-between">
-      <Col className="myFinances">Мої фінанси</Col>
-      <Col className="myFinancesNum">
-        <span>$</span> {price}
-      </Col>
-    </Row>
+  const popoverButton = (
+    <Button type="text">
+      <div className="finance">
+        <p> {price} $ </p>
+        <img src={DollarCircle} alt={DollarCircle} />
+      </div>
+    </Button>
   );
   return (
     <>
-      <Col className="user" span={12}>
-        <div>
-          <Avatar
-            key="1"
-            style={{ borderColor: "red", marginRight: "0" }}
-            src={avatar}
-          />
-        </div>
-        <div>Ольга Пліщук</div>
-      </Col>
-      <Col span={12}>
-        <Popover
-          key="3"
-          content={<ExchangeRates />}
-          title={title}
-          trigger="click"
-        >
-          <Button key="2" type="text">
-            <div className="finance">
-              {price} <DollarOutlined style={{ color: "#727478" }} />
-            </div>
-          </Button>
-        </Popover>
-      </Col>
+      <Row className="user" justify="space-between">
+        <Row>
+          <Avatar src={avatar} />
+          <p>Ольга Пліщук</p>
+        </Row>
+
+        <PopoverCurrency price={price} popoverBut={popoverButton} />
+      </Row>
     </>
   );
 };

@@ -1,8 +1,10 @@
 import { Row, Col } from "antd";
 import Logo from "./Logo/Logo";
 import CloseButton from "./CloseButton/CloseButton";
+import MiniCurrenciesAvatar from "./MiniCurrenciesAvatar/MiniCurrenciesAvatar";
 
-const TopWithCloseButton = ({ setVisible }) => {
+const TopWithCloseButton = ({ setVisible, price }) => {
+  console.log(price)
   return (
     <>
       <Row justify="space-between">
@@ -11,6 +13,11 @@ const TopWithCloseButton = ({ setVisible }) => {
         </Col>
         <Col xs={7} sm={4} lg={0} align="middle">
           <CloseButton setVisible={setVisible} />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={24} lg={0}>
+          <MiniCurrenciesAvatar price={price} />
         </Col>
       </Row>
     </>

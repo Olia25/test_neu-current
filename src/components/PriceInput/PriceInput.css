@@ -8,6 +8,10 @@
   color: #005be4;
   margin-bottom: 0;
 }
+.miniPrice span{
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 13px;
+}
 .quantityMiniInner {
   border: 1px solid #dadae8;
   width: 130px;

@@ -6,8 +6,7 @@ function ExchangeRates() {
   const { loading, error, data } = useQuery(getCurrencyQuery);
   if (loading) return <p>Loading...</p>;
   if (error) <p>Error...</p>;
-  console.log("dfddddddddd", data);
-  console.log("error", error);
+
   return (
     <div>
       <p>Основна валюта <InfoCircleOutlined style={{color:" #BABEC9"}}/></p>

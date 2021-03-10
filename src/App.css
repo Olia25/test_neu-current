@@ -25,6 +25,7 @@ body{
 }
 .informText span {
   color: #181818;
+
 }
 .cartTitleOfProd {
   font-size: 20px;
@@ -39,8 +40,9 @@ body{
   line-height: 33px;
 }
 .dollar {
-  font-size: 18px;
-  color: #5b626d;
+  font-size: 16px;
+  color: #8C8C8C;;
+  font-weight: 500;
 }
 .greenText {
   color: #4e9616;
@@ -108,25 +110,43 @@ body{
   margin: 0 10px 0 10px;
 }
 .popoverWidth {
-  width: 250px;
+  width: 280px;
   margin-bottom: 15px;
 }
+.ant-popover-placement-bottomRight .ant-popover-inner {
+  background-color: #2F2F37;
+}
+.ant-popover-placement-bottomRight .currencyStyle {
+  color: white;
+}
+.ant-popover-placement-bottomRight .myFinancesNum {
+  color: white;
+}
+.ant-popover-placement-bottomRight .ant-popover-inner-content {
+  color: white;
+}
+
 .topLineFinance {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   color: #4e9616;
+  margin-right: 10px;
 }
 .myFinances {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #005be4;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 .myFinancesNum {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .myFinancesNum span {
   color: #4c7eff;
@@ -170,8 +190,13 @@ body{
   }
   .sum {
     font-weight: bold;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    /*line-height: 28px;*/
+  }
+  .sum span{
+   color: #787878;
+    font-weight: normal;
+    font-size: 14px;
   }
   .prodCharactMargin{
     margin-left: 20px;
